@@ -1,0 +1,81 @@
+{
+  "retailers": [
+    {
+      "id": 1,
+      "name": "Amazon",
+      "website": "https://www.amazon.ca"
+    },
+    {
+      "id": 2,
+      "name": "Best Buy",
+      "website": "https://www.bestbuy.ca"
+    },
+    {
+      "id": 3,
+      "name": "Walmart",
+      "website": "https://www.walmart.ca"
+    }
+  ],
+  "listings": [
+    {
+      "id": 101,
+      "productId": 1,
+      "retailerId": 1,
+      "retailerProductName": "Sony WH-1000XM5 Wireless Headphones",
+      "price": 399.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 102,
+      "productId": 1,
+      "retailerId": 2,
+      "retailerProductName": "Sony WH1000XM5 Noise Cancelling Headphones",
+      "price": 379.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 103,
+      "productId": 1,
+      "retailerId": 3,
+      "retailerProductName": "Sony XM5 Wireless Over Ear Headphones",
+      "price": 409.99,
+      "currency": "CAD",
+      "inStock": false,
+      "productUrl": ""
+    },
+    {
+      "id": 104,
+      "productId": 2,
+      "retailerId": 1,
+      "retailerProductName": "Apple iPhone 15 128GB",
+      "price": 799.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 105,
+      "productId": 2,
+      "retailerId": 2,
+      "retailerProductName": "iPhone 15 128 GB",
+      "price": 829.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 106,
+      "productId": 3,
+      "retailerId": 3,
+      "retailerProductName": "Samsung Galaxy S24",
+      "price": 699.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    }
+  ]
+}
