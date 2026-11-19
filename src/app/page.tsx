@@ -1,156 +1,125 @@
 "use client";
 
-import { FormEvent, useRef, useState } from "react";
+import { useEffect, useState } from "react";
+import type { Product, ProductListing } from "@/types/product";
 
-type ShoppingProduct = {
-  id: number;
-  name: string;
-  retailer: string;
-  price: number;
-  displayPrice: string;
-  link: string | null;
-  thumbnail: string | null;
-  condition: string | null;
-  delivery: string | null;
-};
+type Offer = ProductListing & { retailer: string };
+type ProductWithOffers = Product & { offers: Offer[] };
 
 export default function Home() {
   const [search, setSearch] = useState("");
-  const [searchedFor, setSearchedFor] = useState("");
-  const [products, setProducts] = useState<ShoppingProduct[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [products, setProducts] = useState<ProductWithOffers[]>([]);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const controllerRef = useRef<AbortController | null>(null);
 
-  async function handleSearch(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const query = search.trim();
-    if (!query || loading) return;
-
-    controllerRef.current?.abort();
+  useEffect(() => {
     const controller = new AbortController();
-    controllerRef.current = controller;
-    setLoading(true);
-    setError("");
-    setProducts([]);
-    setSearchedFor(query);
 
-    try {
-      const response = await fetch(
-        `/api/products?search=${encodeURIComponent(query)}`,
-        { signal: controller.signal }
-      );
-      const data = await response.json();
-      if (!response.ok) {
-        throw new Error(data.error || "Unable to search products.");
+    async function loadProducts() {
+      setLoading(true);
+      setError("");
+      try {
+        const response = await fetch(
+          `/api/products?search=${encodeURIComponent(search)}`,
+          { signal: controller.signal }
+        );
+        if (!response.ok) throw new Error("Unable to load products.");
+        const result = await response.json();
+        if (!Array.isArray(result.products)) throw new Error("Invalid catalog response.");
+        setProducts(result.products);
+      } catch (error) {
+        if (!controller.signal.aborted) {
+          setError(error instanceof Error ? error.message : "Unable to load products.");
+          setProducts([]);
+        }
+      } finally {
+        if (!controller.signal.aborted) setLoading(false);
       }
-      setProducts(data.products);
-    } catch (error) {
-      if (!controller.signal.aborted) {
-        setError(error instanceof Error ? error.message : "Unable to search products.");
-      }
-    } finally {
-      if (!controller.signal.aborted) setLoading(false);
     }
-  }
+
+    const timer = setTimeout(loadProducts, 200);
+    return () => {
+      clearTimeout(timer);
+      controller.abort();
+    };
+  }, [search]);
 
   return (
     <main className="min-h-screen bg-gray-50 px-6 py-12 text-gray-900">
-      <div className="mx-auto max-w-4xl">
-        <header className="mb-10 text-center">
+      <div className="mx-auto max-w-5xl">
+        <header className="mb-9 text-center">
           <h1 className="text-4xl font-bold">PriceCompare</h1>
           <p className="mt-3 text-gray-600">
-            Search any product or model number to compare shopping listings.
+            Search our catalog by name, model number, or category.
           </p>
         </header>
 
-        <form onSubmit={handleSearch} className="flex flex-col gap-3 sm:flex-row">
-          <label htmlFor="product-search" className="sr-only">Search products</label>
-          <input
-            id="product-search"
-            type="search"
-            maxLength={150}
-            value={search}
-            onChange={(event) => setSearch(event.target.value)}
-            placeholder="Try Sony WH-1000XM5 or a model number"
-            className="min-w-0 flex-1 rounded-lg border border-gray-300 bg-white p-4 shadow-sm outline-none focus:border-blue-500"
-          />
-          <button
-            type="submit"
-            disabled={loading || !search.trim()}
-            className="rounded-lg bg-blue-700 px-6 py-4 font-semibold text-white hover:bg-blue-800 disabled:cursor-not-allowed disabled:opacity-50"
-          >
-            {loading ? "Searching..." : "Compare prices"}
-          </button>
-        </form>
-
+        <label htmlFor="product-search" className="sr-only">
+          Search products
+        </label>
+        <input
+          id="product-search"
+          type="search"
+          maxLength={150}
+          value={search}
+          onChange={(event) => setSearch(event.target.value)}
+          placeholder="Try headphones, WH-1000XM5, iPhone, or gaming..."
+          className="w-full rounded-lg border border-gray-300 bg-white p-4 shadow-sm outline-none focus:border-blue-500"
+        />
         <p className="mt-3 text-sm text-gray-500">
-          Live shopping search results. Prices are listed from lowest to highest;
-          different variants, conditions, shipping costs, and stock availability may affect comparisons.
+          Offline demonstration catalog. All retailer names and prices are fictional.
         </p>
 
-        <section className="mt-8 space-y-4" aria-live="polite">
+        <section className="mt-8 space-y-5" aria-live="polite">
           {loading ? (
-            <p className="text-center text-gray-600">Searching retailers...</p>
+            <p className="text-center text-gray-600">Searching catalog...</p>
           ) : error ? (
             <p role="alert" className="rounded-lg bg-red-50 p-4 text-red-700">{error}</p>
-          ) : searchedFor && products.length === 0 ? (
-            <p className="text-center text-gray-600">
-              No priced shopping listings found for &ldquo;{searchedFor}&rdquo;.
-            </p>
-          ) : products.length > 0 ? (
+          ) : products.length === 0 ? (
+            <p className="text-center text-gray-500">No products found.</p>
+          ) : (
             <>
-              <h2 className="text-lg font-semibold">
-                {products.length} results for &ldquo;{searchedFor}&rdquo; — lowest price first
+              <h2 className="text-sm font-medium text-gray-600">
+                {products.length} product{products.length === 1 ? "" : "s"} found
               </h2>
               {products.map((product) => (
                 <article
                   key={product.id}
-                  className="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-5 shadow-sm sm:flex-row sm:items-center"
+                  className="rounded-xl border border-gray-200 bg-white p-5 shadow-sm"
                 >
-                  {product.thumbnail && (
-                    // Images come from shopping search and can have arbitrary hosts.
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={product.thumbnail}
-                      alt=""
-                      loading="lazy"
-                      referrerPolicy="no-referrer"
-                      className="h-28 w-28 shrink-0 rounded-lg object-contain"
-                    />
+                  <h3 className="text-xl font-semibold">{product.name}</h3>
+                  <p className="mt-1 text-sm text-gray-600">
+                    Model: {product.model} · {product.category}
+                  </p>
+                  <h4 className="mt-5 font-medium">Retailer prices — lowest first</h4>
+                  {product.offers.length === 0 ? (
+                    <p className="mt-2 text-sm text-gray-500">No offers available.</p>
+                  ) : (
+                    <ul className="mt-2 divide-y divide-gray-100">
+                      {product.offers.map((offer) => (
+                        <li
+                          key={offer.id}
+                          className="flex flex-wrap items-center justify-between gap-3 py-3"
+                        >
+                          <div>
+                            <p className="font-medium">{offer.retailer}</p>
+                            <p className="text-sm text-gray-500">
+                              {offer.inStock ? "In stock" : "Out of stock"}
+                            </p>
+                          </div>
+                          <span className="text-lg font-semibold">
+                            {new Intl.NumberFormat("en-CA", {
+                              style: "currency",
+                              currency: offer.currency,
+                            }).format(offer.price)}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
                   )}
-                  <div className="min-w-0 flex-1">
-                    <h3 className="font-semibold">{product.name}</h3>
-                    <p className="mt-1 text-sm text-gray-600">{product.retailer}</p>
-                    {product.condition && (
-                      <p className="text-sm text-gray-500">
-                        Condition: {product.condition}
-                      </p>
-                    )}
-                    {product.delivery && (
-                      <p className="text-sm text-gray-500">{product.delivery}</p>
-                    )}
-                  </div>
-                  <div className="shrink-0 sm:text-right">
-                    <p className="text-xl font-bold">{product.displayPrice}</p>
-                    {product.link && (
-                      <a
-                        href={product.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-2 inline-block text-sm font-medium text-blue-700 underline"
-                      >
-                        View retailer listing
-                      </a>
-                    )}
-                  </div>
                 </article>
               ))}
             </>
-          ) : (
-            <p className="text-center text-gray-500">
-              Enter a product name or model number to see retailer listings.
-            </p>
           )}
         </section>
       </div>
