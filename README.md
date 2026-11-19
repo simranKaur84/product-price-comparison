@@ -1,17 +1,17 @@
 # PriceCompare
 
-A small offline product price comparison application using Next.js, TypeScript, and local JSON data.
+An offline product catalog and advertised-price comparison demo using Next.js, TypeScript, and a local JSON fixture.
 
-## Features
+## Existing functionality
 
-- Search the catalog by product name, model number, or category.
-- Display sample retailer offers for each product in ascending price order.
-- Show in-stock and out-of-stock offer labels.
-- Work without any live shopping API, credentials, or database server.
+- Search product name, model number, or category.
+- Display each product's assigned retailer offers sorted by advertised item price (ascending).
+- Display whether each offer is in stock.
+- Run without external shopping APIs, API keys, or a database server.
 
-The demo catalog in `data/catalog.json` contains 20 products and 60 sample offers from four fictional retailers. All prices are synthetic and are not current market quotes.
+The catalog in `data/catalog.json` contains 20 products, four fictional retailers, and 68 synthetic offers. Names and prices are sample data, not real-time prices or purchasing recommendations.
 
-## Run locally
+## Getting started
 
 ```bash
 npm install
@@ -20,20 +20,26 @@ npm run dev
 
 Open http://localhost:3000.
 
-## Checks
+## Baseline checks
 
 ```bash
+npm test
 npm run lint
 npm run build
 ```
 
-## Project structure
+The tests in `tests/catalog.test.mjs` verify data integrity, search examples, sorting by listed price, and that several deliberate edge cases are present. They do **not** certify future cross-retailer matching or total-cost comparison correctness; those require new focused tests.
 
-- `src/app/page.tsx` — product search and retailer offer display.
-- `src/app/api/products/route.ts` — local catalog search API.
-- `data/catalog.json` — products, retailers, and sample offers.
-- `src/types/product.ts` — shared product and listing types.
+## Key files
 
-## Current limitations
+- `data/catalog.json`: products, retailers, and synthetic listings.
+- `src/app/api/products/route.ts`: search, ID-based offer joining, and advertised-price sorting.
+- `src/app/page.tsx`: search input and results display.
+- `src/types/product.ts`: product, retailer, and offer shapes.
+- `tests/catalog.test.mjs`: offline baseline checks.
 
-Offers are linked to catalog products by internal IDs. There is no independent reconciliation of conflicting retailer model numbers or product variants, shipping and tax calculation, duplicate offer management, or currency normalization. The listed price sorting is a basic demonstration, not a reliable final purchasing recommendation.
+## Known limitations
+
+Listings are assigned to catalog products by `productId` without verifying `retailerModel` or product variants. The baseline ignores `condition` and `shippingCost`, does not deduplicate merchant offers, and sorts out-of-stock items along with in-stock items. This is intentional: the fixture includes incorrectly matched variants, refurbished items, duplicate retailer listings, unknown shipping amounts, and unavailable offers to demonstrate those shortcomings. The application does not yet identify a genuinely comparable lowest-cost in-stock offer.
+
+The matching, exclusion, total-cost, and recommendation behaviors have **not** been implemented.
