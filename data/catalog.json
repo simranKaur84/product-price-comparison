@@ -152,7 +152,10 @@
       "price": 424.99,
       "currency": "CAD",
       "inStock": false,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "WH-1000XM5",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 12,
@@ -162,7 +165,10 @@
       "price": 384.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "WH-1000XM5",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 13,
@@ -172,7 +178,10 @@
       "price": 439.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "WH-1000XM5",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 21,
@@ -182,7 +191,10 @@
       "price": 314.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "WH-1000XM4",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 22,
@@ -192,7 +204,10 @@
       "price": 274.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "WH-1000XM4",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 23,
@@ -202,7 +217,10 @@
       "price": 329.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "WH-1000XM4",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 31,
@@ -212,7 +230,10 @@
       "price": 524.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "QC-ULTRA",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 32,
@@ -222,7 +243,10 @@
       "price": 484.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "QC-ULTRA",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 33,
@@ -232,7 +256,10 @@
       "price": 539.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "QC-ULTRA",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 41,
@@ -242,7 +269,10 @@
       "price": 304.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "MTJV3AM/A",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 42,
@@ -252,7 +282,10 @@
       "price": 264.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "MTJV3AM/A",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 43,
@@ -262,7 +295,10 @@
       "price": 319.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "MTJV3AM/A",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 51,
@@ -272,7 +308,10 @@
       "price": 224.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "SM-R510",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 52,
@@ -282,7 +321,10 @@
       "price": 184.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "SM-R510",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 53,
@@ -292,7 +334,10 @@
       "price": 239.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "SM-R510",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 61,
@@ -302,7 +347,10 @@
       "price": 824.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "A3090",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 62,
@@ -312,7 +360,10 @@
       "price": 784.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "A3090",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 63,
@@ -322,7 +373,10 @@
       "price": 839.99,
       "currency": "CAD",
       "inStock": false,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "A3090",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 71,
@@ -332,7 +386,10 @@
       "price": 1024.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "A3101",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 72,
@@ -342,7 +399,10 @@
       "price": 984.99,
       "currency": "CAD",
       "inStock": false,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "A3101",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 73,
@@ -352,7 +412,10 @@
       "price": 1039.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "A3101",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 81,
@@ -362,7 +425,10 @@
       "price": 774.99,
       "currency": "CAD",
       "inStock": false,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "SM-S921W",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 82,
@@ -372,7 +438,10 @@
       "price": 734.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "SM-S921W",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 83,
@@ -382,7 +451,10 @@
       "price": 789.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "SM-S921W",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 91,
@@ -392,7 +464,10 @@
       "price": 574.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "G9BQD",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 92,
@@ -402,7 +477,10 @@
       "price": 534.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "G9BQD",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 93,
@@ -412,7 +490,10 @@
       "price": 589.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "G9BQD",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 101,
@@ -422,7 +503,10 @@
       "price": 824.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "GC3VE",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 102,
@@ -432,7 +516,10 @@
       "price": 784.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "GC3VE",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 103,
@@ -442,7 +529,10 @@
       "price": 839.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "GC3VE",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 111,
@@ -452,7 +542,10 @@
       "price": 1424.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "MRXV3LL/A",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 112,
@@ -462,7 +555,10 @@
       "price": 1384.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "MRXV3LL/A",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 113,
@@ -472,7 +568,10 @@
       "price": 1439.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "MRXV3LL/A",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 121,
@@ -482,7 +581,10 @@
       "price": 1724.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "21ML",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 122,
@@ -492,7 +594,10 @@
       "price": 1684.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "21ML",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 123,
@@ -502,7 +607,10 @@
       "price": 1739.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "21ML",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 131,
@@ -512,7 +620,10 @@
       "price": 1524.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "XPS9340",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 132,
@@ -522,7 +633,10 @@
       "price": 1484.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "XPS9340",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 133,
@@ -532,7 +646,10 @@
       "price": 1539.99,
       "currency": "CAD",
       "inStock": false,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "XPS9340",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 141,
@@ -542,7 +659,10 @@
       "price": 874.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "MUWD3LL/A",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 142,
@@ -552,7 +672,10 @@
       "price": 834.99,
       "currency": "CAD",
       "inStock": false,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "MUWD3LL/A",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 143,
@@ -562,7 +685,10 @@
       "price": 889.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "MUWD3LL/A",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 151,
@@ -572,7 +698,10 @@
       "price": 824.99,
       "currency": "CAD",
       "inStock": false,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "SM-X710",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 152,
@@ -582,7 +711,10 @@
       "price": 784.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "SM-X710",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 153,
@@ -592,7 +724,10 @@
       "price": 839.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "SM-X710",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 161,
@@ -602,7 +737,10 @@
       "price": 474.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "HEG-001",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 162,
@@ -612,7 +750,10 @@
       "price": 434.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "HEG-001",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 163,
@@ -622,7 +763,10 @@
       "price": 489.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "HEG-001",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 171,
@@ -632,7 +776,10 @@
       "price": 674.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "CFI-2015",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 172,
@@ -642,7 +789,10 @@
       "price": 634.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "CFI-2015",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 173,
@@ -652,7 +802,10 @@
       "price": 689.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "CFI-2015",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 181,
@@ -662,7 +815,10 @@
       "price": 144.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "MR0077",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 182,
@@ -672,7 +828,10 @@
       "price": 104.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "MR0077",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 183,
@@ -682,7 +841,10 @@
       "price": 159.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "MR0077",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 191,
@@ -692,7 +854,10 @@
       "price": 1024.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "5811C002",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 192,
@@ -702,7 +867,10 @@
       "price": 984.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "5811C002",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 193,
@@ -712,7 +880,10 @@
       "price": 1039.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "5811C002",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 201,
@@ -722,7 +893,10 @@
       "price": 604.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "010-02810-00",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 202,
@@ -732,7 +906,10 @@
       "price": 564.99,
       "currency": "CAD",
       "inStock": true,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "010-02810-00",
+      "condition": "new",
+      "shippingCost": 9.99
     },
     {
       "id": 203,
@@ -742,7 +919,114 @@
       "price": 619.99,
       "currency": "CAD",
       "inStock": false,
-      "productUrl": ""
+      "productUrl": "",
+      "retailerModel": "010-02810-00",
+      "condition": "new",
+      "shippingCost": 9.99
+    },
+    {
+      "id": 901,
+      "productId": 6,
+      "retailerId": 4,
+      "retailerProductName": "Apple iPhone 15 256GB",
+      "retailerModel": "A3090-256",
+      "price": 699.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": "",
+      "condition": "new",
+      "shippingCost": 0
+    },
+    {
+      "id": 902,
+      "productId": 1,
+      "retailerId": 4,
+      "retailerProductName": "Sony WH-1000XM4 Wireless Headphones",
+      "retailerModel": "WH-1000XM4",
+      "price": 249.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": "",
+      "condition": "new",
+      "shippingCost": 0
+    },
+    {
+      "id": 903,
+      "productId": 1,
+      "retailerId": 2,
+      "retailerProductName": "Sony WH-1000XM5 Headphones — duplicate merchant listing",
+      "retailerModel": "WH-1000XM5",
+      "price": 382.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": "",
+      "condition": "new",
+      "shippingCost": 19.99
+    },
+    {
+      "id": 904,
+      "productId": 8,
+      "retailerId": 1,
+      "retailerProductName": "Samsung Galaxy S24 Refurbished",
+      "retailerModel": "SM-S921W",
+      "price": 499.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": "",
+      "condition": "refurbished",
+      "shippingCost": 0
+    },
+    {
+      "id": 905,
+      "productId": 11,
+      "retailerId": 3,
+      "retailerProductName": "Apple MacBook Air M3 13-inch",
+      "retailerModel": "MRXV3LL/A",
+      "price": 1394.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": "",
+      "condition": "new",
+      "shippingCost": null
+    },
+    {
+      "id": 906,
+      "productId": 16,
+      "retailerId": 4,
+      "retailerProductName": "Nintendo Switch OLED",
+      "retailerModel": "HEG001",
+      "price": 389.99,
+      "currency": "CAD",
+      "inStock": false,
+      "productUrl": "",
+      "condition": "new",
+      "shippingCost": 0
+    },
+    {
+      "id": 907,
+      "productId": 14,
+      "retailerId": 1,
+      "retailerProductName": "Apple iPad Air 13-inch M2",
+      "retailerModel": "MV273LL/A",
+      "price": 799.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": "",
+      "condition": "new",
+      "shippingCost": 0
+    },
+    {
+      "id": 908,
+      "productId": 18,
+      "retailerId": 4,
+      "retailerProductName": "Logitech MX Master 3S",
+      "retailerModel": "MR0077",
+      "price": 99.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": "",
+      "condition": "new",
+      "shippingCost": 24.99
     }
   ]
 }
