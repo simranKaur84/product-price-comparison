@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PriceCompare
 
-## Getting Started
+Search Google Shopping listings for a product name or model number and display retailer offers from lowest listed price to highest.
 
-First, run the development server:
+## Setup
+
+Requires Node.js and npm.
+
+```bash
+npm install
+```
+
+Create a local `.env.local` file in the project root:
+
+```dotenv
+SERPAPI_KEY=your_serpapi_api_key
+```
+
+Get an API key at https://serpapi.com/. Never commit your key. The existing `.gitignore` excludes `.env*` files.
+
+Start the application:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 and search for a product by name or model number. Click **Compare prices** to request live results. Searches are sent only when submitted, not on every keystroke.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The backend endpoint is `GET /api/products?search=Sony%20WH-1000XM5`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To check the project:
 
-## Learn More
+```bash
+npm run lint
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## How it works
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- The Next.js server calls SerpApi's `google_shopping` engine with Canadian locale settings.
+- Results with a numeric extracted price are sorted in ascending order and returned to the browser.
+- The page displays each listing's name, retailer, quoted price, thumbnail, and link when available.
+- Missing API configuration and upstream errors are shown explicitly. No sample products or fake fallback prices are returned.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Limitations:** Shopping search results may include different variants, conditions, bundles, or inaccurate product matches. Listed prices may omit shipping and taxes. Prices and retailer availability are not independently verified by this application. SerpApi needs network access, an active API key, and available request quota.
