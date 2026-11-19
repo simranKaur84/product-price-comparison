@@ -1,0 +1,748 @@
+{
+  "retailers": [
+    {
+      "id": 1,
+      "name": "North Electronics",
+      "website": ""
+    },
+    {
+      "id": 2,
+      "name": "Value Tech",
+      "website": ""
+    },
+    {
+      "id": 3,
+      "name": "Maple Devices",
+      "website": ""
+    },
+    {
+      "id": 4,
+      "name": "Tech Corner",
+      "website": ""
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Sony WH-1000XM5 Headphones",
+      "model": "WH-1000XM5",
+      "category": "Audio"
+    },
+    {
+      "id": 2,
+      "name": "Sony WH-1000XM4 Headphones",
+      "model": "WH-1000XM4",
+      "category": "Audio"
+    },
+    {
+      "id": 3,
+      "name": "Bose QuietComfort Ultra Headphones",
+      "model": "QC-ULTRA",
+      "category": "Audio"
+    },
+    {
+      "id": 4,
+      "name": "Apple AirPods Pro 2",
+      "model": "MTJV3AM/A",
+      "category": "Audio"
+    },
+    {
+      "id": 5,
+      "name": "Samsung Galaxy Buds2 Pro",
+      "model": "SM-R510",
+      "category": "Audio"
+    },
+    {
+      "id": 6,
+      "name": "Apple iPhone 15 128GB",
+      "model": "A3090",
+      "category": "Phones"
+    },
+    {
+      "id": 7,
+      "name": "Apple iPhone 15 Pro 128GB",
+      "model": "A3101",
+      "category": "Phones"
+    },
+    {
+      "id": 8,
+      "name": "Samsung Galaxy S24 128GB",
+      "model": "SM-S921W",
+      "category": "Phones"
+    },
+    {
+      "id": 9,
+      "name": "Google Pixel 8 128GB",
+      "model": "G9BQD",
+      "category": "Phones"
+    },
+    {
+      "id": 10,
+      "name": "Google Pixel 8 Pro 128GB",
+      "model": "GC3VE",
+      "category": "Phones"
+    },
+    {
+      "id": 11,
+      "name": "Apple MacBook Air M3 13-inch",
+      "model": "MRXV3LL/A",
+      "category": "Computers"
+    },
+    {
+      "id": 12,
+      "name": "Lenovo ThinkPad T14 Gen 5",
+      "model": "21ML",
+      "category": "Computers"
+    },
+    {
+      "id": 13,
+      "name": "Dell XPS 13 9340",
+      "model": "XPS9340",
+      "category": "Computers"
+    },
+    {
+      "id": 14,
+      "name": "Apple iPad Air M2 11-inch",
+      "model": "MUWD3LL/A",
+      "category": "Tablets"
+    },
+    {
+      "id": 15,
+      "name": "Samsung Galaxy Tab S9",
+      "model": "SM-X710",
+      "category": "Tablets"
+    },
+    {
+      "id": 16,
+      "name": "Nintendo Switch OLED",
+      "model": "HEG-001",
+      "category": "Gaming"
+    },
+    {
+      "id": 17,
+      "name": "PlayStation 5 Slim Disc",
+      "model": "CFI-2015",
+      "category": "Gaming"
+    },
+    {
+      "id": 18,
+      "name": "Logitech MX Master 3S",
+      "model": "MR0077",
+      "category": "Accessories"
+    },
+    {
+      "id": 19,
+      "name": "Canon EOS R50 Kit",
+      "model": "5811C002",
+      "category": "Cameras"
+    },
+    {
+      "id": 20,
+      "name": "Garmin Forerunner 265",
+      "model": "010-02810-00",
+      "category": "Wearables"
+    }
+  ],
+  "listings": [
+    {
+      "id": 11,
+      "productId": 1,
+      "retailerId": 1,
+      "retailerProductName": "Sony WH-1000XM5 Headphones",
+      "price": 424.99,
+      "currency": "CAD",
+      "inStock": false,
+      "productUrl": ""
+    },
+    {
+      "id": 12,
+      "productId": 1,
+      "retailerId": 2,
+      "retailerProductName": "Sony WH 1000XM5 Headphones",
+      "price": 384.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 13,
+      "productId": 1,
+      "retailerId": 3,
+      "retailerProductName": "Sony WH-1000XM5 Headphones",
+      "price": 439.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 21,
+      "productId": 2,
+      "retailerId": 2,
+      "retailerProductName": "Sony WH-1000XM4 Headphones",
+      "price": 314.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 22,
+      "productId": 2,
+      "retailerId": 3,
+      "retailerProductName": "Sony WH 1000XM4 Headphones",
+      "price": 274.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 23,
+      "productId": 2,
+      "retailerId": 4,
+      "retailerProductName": "Sony WH-1000XM4 Headphones",
+      "price": 329.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 31,
+      "productId": 3,
+      "retailerId": 3,
+      "retailerProductName": "Bose QuietComfort Ultra Headphones",
+      "price": 524.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 32,
+      "productId": 3,
+      "retailerId": 4,
+      "retailerProductName": "Bose QuietComfort Ultra Headphones",
+      "price": 484.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 33,
+      "productId": 3,
+      "retailerId": 1,
+      "retailerProductName": "Bose QuietComfort Ultra Headphones",
+      "price": 539.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 41,
+      "productId": 4,
+      "retailerId": 4,
+      "retailerProductName": "Apple AirPods Pro 2",
+      "price": 304.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 42,
+      "productId": 4,
+      "retailerId": 1,
+      "retailerProductName": "Apple AirPods Pro 2",
+      "price": 264.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 43,
+      "productId": 4,
+      "retailerId": 2,
+      "retailerProductName": "Apple AirPods Pro 2",
+      "price": 319.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 51,
+      "productId": 5,
+      "retailerId": 1,
+      "retailerProductName": "Samsung Galaxy Buds2 Pro",
+      "price": 224.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 52,
+      "productId": 5,
+      "retailerId": 2,
+      "retailerProductName": "Samsung Galaxy Buds2 Pro",
+      "price": 184.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 53,
+      "productId": 5,
+      "retailerId": 3,
+      "retailerProductName": "Samsung Galaxy Buds2 Pro",
+      "price": 239.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 61,
+      "productId": 6,
+      "retailerId": 2,
+      "retailerProductName": "Apple iPhone 15 128GB",
+      "price": 824.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 62,
+      "productId": 6,
+      "retailerId": 3,
+      "retailerProductName": "Apple iPhone 15 128GB",
+      "price": 784.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 63,
+      "productId": 6,
+      "retailerId": 4,
+      "retailerProductName": "Apple iPhone 15 128GB",
+      "price": 839.99,
+      "currency": "CAD",
+      "inStock": false,
+      "productUrl": ""
+    },
+    {
+      "id": 71,
+      "productId": 7,
+      "retailerId": 3,
+      "retailerProductName": "Apple iPhone 15 Pro 128GB",
+      "price": 1024.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 72,
+      "productId": 7,
+      "retailerId": 4,
+      "retailerProductName": "Apple iPhone 15 Pro 128GB",
+      "price": 984.99,
+      "currency": "CAD",
+      "inStock": false,
+      "productUrl": ""
+    },
+    {
+      "id": 73,
+      "productId": 7,
+      "retailerId": 1,
+      "retailerProductName": "Apple iPhone 15 Pro 128GB",
+      "price": 1039.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 81,
+      "productId": 8,
+      "retailerId": 4,
+      "retailerProductName": "Samsung Galaxy S24 128GB",
+      "price": 774.99,
+      "currency": "CAD",
+      "inStock": false,
+      "productUrl": ""
+    },
+    {
+      "id": 82,
+      "productId": 8,
+      "retailerId": 1,
+      "retailerProductName": "Samsung Galaxy S24 128GB",
+      "price": 734.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 83,
+      "productId": 8,
+      "retailerId": 2,
+      "retailerProductName": "Samsung Galaxy S24 128GB",
+      "price": 789.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 91,
+      "productId": 9,
+      "retailerId": 1,
+      "retailerProductName": "Google Pixel 8 128GB",
+      "price": 574.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 92,
+      "productId": 9,
+      "retailerId": 2,
+      "retailerProductName": "Google Pixel 8 128GB",
+      "price": 534.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 93,
+      "productId": 9,
+      "retailerId": 3,
+      "retailerProductName": "Google Pixel 8 128GB",
+      "price": 589.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 101,
+      "productId": 10,
+      "retailerId": 2,
+      "retailerProductName": "Google Pixel 8 Pro 128GB",
+      "price": 824.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 102,
+      "productId": 10,
+      "retailerId": 3,
+      "retailerProductName": "Google Pixel 8 Pro 128GB",
+      "price": 784.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 103,
+      "productId": 10,
+      "retailerId": 4,
+      "retailerProductName": "Google Pixel 8 Pro 128GB",
+      "price": 839.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 111,
+      "productId": 11,
+      "retailerId": 3,
+      "retailerProductName": "Apple MacBook Air M3 13-inch",
+      "price": 1424.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 112,
+      "productId": 11,
+      "retailerId": 4,
+      "retailerProductName": "Apple MacBook Air M3 13 inch",
+      "price": 1384.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 113,
+      "productId": 11,
+      "retailerId": 1,
+      "retailerProductName": "Apple MacBook Air M3 13-inch",
+      "price": 1439.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 121,
+      "productId": 12,
+      "retailerId": 4,
+      "retailerProductName": "Lenovo ThinkPad T14 Gen 5",
+      "price": 1724.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 122,
+      "productId": 12,
+      "retailerId": 1,
+      "retailerProductName": "Lenovo ThinkPad T14 Gen 5",
+      "price": 1684.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 123,
+      "productId": 12,
+      "retailerId": 2,
+      "retailerProductName": "Lenovo ThinkPad T14 Gen 5",
+      "price": 1739.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 131,
+      "productId": 13,
+      "retailerId": 1,
+      "retailerProductName": "Dell XPS 13 9340",
+      "price": 1524.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 132,
+      "productId": 13,
+      "retailerId": 2,
+      "retailerProductName": "Dell XPS 13 9340",
+      "price": 1484.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 133,
+      "productId": 13,
+      "retailerId": 3,
+      "retailerProductName": "Dell XPS 13 9340",
+      "price": 1539.99,
+      "currency": "CAD",
+      "inStock": false,
+      "productUrl": ""
+    },
+    {
+      "id": 141,
+      "productId": 14,
+      "retailerId": 2,
+      "retailerProductName": "Apple iPad Air M2 11-inch",
+      "price": 874.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 142,
+      "productId": 14,
+      "retailerId": 3,
+      "retailerProductName": "Apple iPad Air M2 11 inch",
+      "price": 834.99,
+      "currency": "CAD",
+      "inStock": false,
+      "productUrl": ""
+    },
+    {
+      "id": 143,
+      "productId": 14,
+      "retailerId": 4,
+      "retailerProductName": "Apple iPad Air M2 11-inch",
+      "price": 889.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 151,
+      "productId": 15,
+      "retailerId": 3,
+      "retailerProductName": "Samsung Galaxy Tab S9",
+      "price": 824.99,
+      "currency": "CAD",
+      "inStock": false,
+      "productUrl": ""
+    },
+    {
+      "id": 152,
+      "productId": 15,
+      "retailerId": 4,
+      "retailerProductName": "Samsung Galaxy Tab S9",
+      "price": 784.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 153,
+      "productId": 15,
+      "retailerId": 1,
+      "retailerProductName": "Samsung Galaxy Tab S9",
+      "price": 839.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 161,
+      "productId": 16,
+      "retailerId": 4,
+      "retailerProductName": "Nintendo Switch OLED",
+      "price": 474.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 162,
+      "productId": 16,
+      "retailerId": 1,
+      "retailerProductName": "Nintendo Switch OLED",
+      "price": 434.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 163,
+      "productId": 16,
+      "retailerId": 2,
+      "retailerProductName": "Nintendo Switch OLED",
+      "price": 489.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 171,
+      "productId": 17,
+      "retailerId": 1,
+      "retailerProductName": "PlayStation 5 Slim Disc",
+      "price": 674.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 172,
+      "productId": 17,
+      "retailerId": 2,
+      "retailerProductName": "PlayStation 5 Slim Disc",
+      "price": 634.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 173,
+      "productId": 17,
+      "retailerId": 3,
+      "retailerProductName": "PlayStation 5 Slim Disc",
+      "price": 689.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 181,
+      "productId": 18,
+      "retailerId": 2,
+      "retailerProductName": "Logitech MX Master 3S",
+      "price": 144.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 182,
+      "productId": 18,
+      "retailerId": 3,
+      "retailerProductName": "Logitech MX Master 3S",
+      "price": 104.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 183,
+      "productId": 18,
+      "retailerId": 4,
+      "retailerProductName": "Logitech MX Master 3S",
+      "price": 159.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 191,
+      "productId": 19,
+      "retailerId": 3,
+      "retailerProductName": "Canon EOS R50 Kit",
+      "price": 1024.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 192,
+      "productId": 19,
+      "retailerId": 4,
+      "retailerProductName": "Canon EOS R50 Kit",
+      "price": 984.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 193,
+      "productId": 19,
+      "retailerId": 1,
+      "retailerProductName": "Canon EOS R50 Kit",
+      "price": 1039.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 201,
+      "productId": 20,
+      "retailerId": 4,
+      "retailerProductName": "Garmin Forerunner 265",
+      "price": 604.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 202,
+      "productId": 20,
+      "retailerId": 1,
+      "retailerProductName": "Garmin Forerunner 265",
+      "price": 564.99,
+      "currency": "CAD",
+      "inStock": true,
+      "productUrl": ""
+    },
+    {
+      "id": 203,
+      "productId": 20,
+      "retailerId": 2,
+      "retailerProductName": "Garmin Forerunner 265",
+      "price": 619.99,
+      "currency": "CAD",
+      "inStock": false,
+      "productUrl": ""
+    }
+  ]
+}
