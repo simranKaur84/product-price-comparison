@@ -1,45 +1,39 @@
 # PriceCompare
 
-Search Google Shopping listings for a product name or model number and display retailer offers from lowest listed price to highest.
+A small offline product price comparison application using Next.js, TypeScript, and local JSON data.
 
-## Setup
+## Features
 
-Requires Node.js and npm.
+- Search the catalog by product name, model number, or category.
+- Display sample retailer offers for each product in ascending price order.
+- Show in-stock and out-of-stock offer labels.
+- Work without any live shopping API, credentials, or database server.
+
+The demo catalog in `data/catalog.json` contains 20 products and 60 sample offers from four fictional retailers. All prices are synthetic and are not current market quotes.
+
+## Run locally
 
 ```bash
 npm install
-```
-
-Create a local `.env.local` file in the project root:
-
-```dotenv
-SERPAPI_KEY=your_serpapi_api_key
-```
-
-Get an API key at https://serpapi.com/. Never commit your key. The existing `.gitignore` excludes `.env*` files.
-
-Start the application:
-
-```bash
 npm run dev
 ```
 
-Open http://localhost:3000 and search for a product by name or model number. Click **Compare prices** to request live results. Searches are sent only when submitted, not on every keystroke.
+Open http://localhost:3000.
 
-The backend endpoint is `GET /api/products?search=Sony%20WH-1000XM5`.
-
-To check the project:
+## Checks
 
 ```bash
 npm run lint
 npm run build
 ```
 
-## How it works
+## Project structure
 
-- The Next.js server calls SerpApi's `google_shopping` engine with Canadian locale settings.
-- Results with a numeric extracted price are sorted in ascending order and returned to the browser.
-- The page displays each listing's name, retailer, quoted price, thumbnail, and link when available.
-- Missing API configuration and upstream errors are shown explicitly. No sample products or fake fallback prices are returned.
+- `src/app/page.tsx` — product search and retailer offer display.
+- `src/app/api/products/route.ts` — local catalog search API.
+- `data/catalog.json` — products, retailers, and sample offers.
+- `src/types/product.ts` — shared product and listing types.
 
-**Limitations:** Shopping search results may include different variants, conditions, bundles, or inaccurate product matches. Listed prices may omit shipping and taxes. Prices and retailer availability are not independently verified by this application. SerpApi needs network access, an active API key, and available request quota.
+## Current limitations
+
+Offers are linked to catalog products by internal IDs. There is no independent reconciliation of conflicting retailer model numbers or product variants, shipping and tax calculation, duplicate offer management, or currency normalization. The listed price sorting is a basic demonstration, not a reliable final purchasing recommendation.
