@@ -1,4 +1,3 @@
-
 export interface Product {
   id: number;
   name: string;
@@ -17,8 +16,11 @@ export interface ProductListing {
   productId: number;
   retailerId: number;
   retailerProductName: string;
+  retailerModel?: string;
   price: number;
   currency: string;
   inStock: boolean;
   productUrl: string;
+  condition?: string;
+  shippingCost?: number | null;
 }
